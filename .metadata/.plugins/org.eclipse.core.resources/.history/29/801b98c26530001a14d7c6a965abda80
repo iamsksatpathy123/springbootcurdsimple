@@ -1,0 +1,5 @@
+package com.cognizant.spring.mysql.dao;
+
+public class TicketDao {
+
+}

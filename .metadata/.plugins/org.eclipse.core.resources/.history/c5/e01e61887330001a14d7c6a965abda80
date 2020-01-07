@@ -1,0 +1,12 @@
+package com.cognizant.spring.mysql.repository;
+
+import org.springframework.data.jpa.repository.Query;
+
+import com.cognizant.spring.mysql.model.Ticket;
+
+public class TicketRepository {
+	
+	@Query(value="select * from ticket t where t.ticket = ?1",nativeQuery = true)
+    Ticket getTIcket(Integer amount);
+
+}
